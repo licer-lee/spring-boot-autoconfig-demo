@@ -9,8 +9,8 @@ public class TimeLoggerService {
 
     private TimeLoggerProperties timeLoggerProperties;
 
-    public TimeLoggerService(TimeLoggerProperties timeLoggerPropertiest) {
-        this.timeLoggerProperties = timeLoggerPropertiest;
+    public TimeLoggerService(TimeLoggerProperties timeLoggerProperties) {
+        this.timeLoggerProperties = timeLoggerProperties;
     }
 
     public void logTime(){
