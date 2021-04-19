@@ -2,6 +2,7 @@ package com.example.startercustomer;
 
 import com.example.startercustomer.properties.TimeLoggerProperties;
 import com.example.startercustomer.service.TimeLoggerService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -17,6 +18,7 @@ public class TimeLoggerAutoConfig {
 
     private final TimeLoggerProperties timeLoggerProperties;
 
+    @Autowired
     public TimeLoggerAutoConfig(TimeLoggerProperties timeLoggerProperties) {
         this.timeLoggerProperties = timeLoggerProperties;
     }
